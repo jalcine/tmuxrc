@@ -1,0 +1,28 @@
+<<<<<<< Updated upstream
+#!/usr/bin/env bash
+# TODO Add my heading.
+# TODO Add a conditional to determine either paste or copy.
+
+# If we're not using tmux, don't bother do anything.
+[[ ! -e $TMUX ]] && return;
+
+tmux_copy_from_buffer { }
+
+tmux_paste_into_buffer { }
+
+||||||| merged common ancestors
+=======
+#!/usr/bin/env bash
+# TODO Add my heading.
+
+# If we're not using tmux, don't bother do anything.
+[[ ! -e $TMUX ]] && return;
+
+tmux_copy_from_buffer() {
+}
+
+tmux_paste_into_buffer() {
+}
+
+# TODO Add a conditional to determine either paste or copy.
+>>>>>>> Stashed changes
