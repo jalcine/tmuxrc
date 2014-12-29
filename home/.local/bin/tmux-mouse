@@ -2,3 +2,34 @@
 # TODO: Add header
 # TODO: Add enabling logic.
 # TODO: Add disabling logic.
+
+tmux_mouse() {
+  case $1 in
+    --enable)
+      tmux set -w mode-mouse on;
+      tmux set -w mouse-resize-pane on;
+      tmux set -w mouse-select-pane on;
+      tmux set -w mouse-select-window on;
+      tmux display-message "[tmux] Mouse mode activated for this window.";
+      ;;
+    --disable)
+      tmux set -uw mode-mouse off;
+      tmux set -uw mouse-resize-pane off;
+      tmux set -uw mouse-select-pane off;
+      tmux set -uw mouse-select-window off;
+      tmux display-message "[tmux] Mouse mode deactivated for this window.";
+      ;;
+    --toggle)
+      ;;
+    --state)
+      ;;
+    --help,*)
+      cat <<HELP
+tmux-mouse - A command line to handle the use of the mouse in tmux.
+
+  --enable    Enables the mouse and its components in the current tmux window.
+  --disable   Disables the mouse and its components in the current tmux window.
+HELP
+      ;;
+  esac
+}
