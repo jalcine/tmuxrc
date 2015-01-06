@@ -2,17 +2,17 @@
 
 case "$1" in
   --enable)
-    tmux set -w mode-mouse on;
-    tmux set -w mouse-resize-pane on;
-    tmux set -w mouse-select-pane on;
-    tmux set -w mouse-select-window on;
+    tmux set mode-mouse on;
+    tmux set -guw mouse-resize-pane on;
+    tmux set -guw mouse-select-pane on;
+    tmux set -guw mouse-select-window on;
     tmux display-message "[tmux] Mouse mode activated for this window.";
     ;;
   --disable)
-    tmux set -uw mode-mouse off;
-    tmux set -uw mouse-resize-pane off;
-    tmux set -uw mouse-select-pane off;
-    tmux set -uw mouse-select-window off;
+    tmux set mode-mouse off;
+    tmux set -guw mouse-resize-pane off;
+    tmux set -guw mouse-select-pane off;
+    tmux set -guw mouse-select-window off;
     tmux display-message "[tmux] Mouse mode deactivated for this window.";
     ;;
   --toggle)
