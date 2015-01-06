@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-tmux_left() {
-}
-
-tmux_right() {
-}
