@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# tmux-status
+# Provide status information for my tmux status line.
