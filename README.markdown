@@ -1,11 +1,10 @@
-# Tmux Configuration
+# ~/.tmux
 
-Here lies the configuration for my [tmux][] setup. It requires at least version
-1.9. If you want to load extra options afterwards, add it to
-`~/.tmux.local.conf`. I’m working on having that file automatically generated
-when tmux runs for the first time.
+![Snapshot of my tmux environment](./snapshot.png)
 
-I use a lot of plugins from [`tmux-plugins`][1] to get that community-funded
-work. Check them out!
+This holds the configuration for my tmux setup. Right now, I target `tmux 2.1`
+so you can expect this to work for that. I strongly recommend just looking at
+the sources for things in my configuration - this README would go out of date
+too quickly.
 
 [tmux]: http://tmux.sourceforge.net
